@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    background-color: #17242D;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: white;
+}
+
+.upload {
+    position: relative;
+}
+ 
+.upload-default {
+    display: none;
+}
+  
+.upload-custom {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #31C3A2;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.upload-custom:hover {
+    color: #333;
+}
+  
+.upload-custom:hover .fa{
+    animation: anim alternate infinite .3s;
+}
+  
+@keyframes anim {
+    to{
+      transform: translateY(0%);
+    }
+    
+    from{
+      transform: translateY(20%);
+    }
+}
+  
+
+
+
+.note {
+    width: 100px;
+    height: 100px;
+    border: black;
+    border-style: solid;
+}
+svg#final {
+    background-color: white;
+    width: 30%;
+}
+.st0{fill:#FFFFFF;}
+.note{fill:#FFFFFF;}
+.test{fill:#eb5050;}
+.st1{display:none;}
+.st2{display:inline;}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  .credits {
+      color: white;
+  }
+  select {
+    margin: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 0 0 .5em;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  /* Flecha */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #34495e;
+    pointer-events: none;
+  }
+  /* Mudar */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  .select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
